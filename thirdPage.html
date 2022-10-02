@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset = "UTF-8">
+    </head>
+    <h1>Some comman block tags</h1>
+    <body>
+        <h2>hr</h2>
+        <p>The&lthr&gt elemnt used to stand for "horizontal line"</p>
+        <hr>
+
+        <h2>address</h2>
+        <p>The &ltaddress&gt elements indicates that the text is an address. For example,</p>
+        <address>
+            Basecamp Potsdam, Koss&aumltenweg 25
+        </address>
+            <address>14476 Potdam-Golm</address>
+            <address>
+            Germnay
+        </address>
+        <hr>
+
+
+        <h2>blockquote</h2>
+        <p>The &ltblockquote&gt element is used for extended quotations.</p>
+        <blockquote>
+        "The only thing i know is i know nothing". Socrates
+        </blockquote>
+        <hr>
+
+        <h2>details</h2>
+        <p>The &ltdetails&gt element is used in conjunction with the &ltsummary&gt tag.</p>
+        <details><summary>The summary</summary>The rest of the details content goes here. 
+            If only &ltdetails&gt element is not supported, 
+            then the summary and the content are always visible.</details>
+    </body>
+    <hr>
+    <h1>Inline elements</h1>
+    <body>
+        <h2>Citing a source - cite</h2>
+        <p>The &ltcite&gt makes it much easier 
+            for people and bots to search the 
+            code for this specific information.
+            A great reference for these and other elements is
+            <cite>"https://developer.mozilla.org/en-US/docs/Web/HTML"</cite>(with only &ltcite&gt)
+            </p>
+            <p> (With &lta href ="..."&gt... &lta&gt)
+            <cite><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">https://developer.mozilla.org/en-US/docs/Web/HTML</a></cite>
+        </p>
+        <hr>
+
+        <h2>Defining your abbreviations -abbr</h2>
+        <p>The &ltabbr&gt will display an abbreviation on the browser. But if a title attribute is specified in the tag, 
+            the title will appear when the mouse hovers over the abbreviation. 
+        Screen readers also provide the title information.</p>
+        <p>The theory of general relativity is based on <abbr title="Differential Geometry">DG</abbr>.</p>
+        <hr>
+
+        <h2>Specifying the use of time - time</h2>
+        The &lttime&gt is again a completely semantic tag 
+        that can be used to search for specific information.
+        <br><br>
+        The party starts at <time>9:00pm</time>.
+        <br><br>
+        The party took place on <time>New Year's Eve</time>.
+        <hr>
+
+        <h2> Identifying code fragments - code</h2>
+        <p>The &ltcode&gt element tends to be displayed in a different font,
+            but also has the semantic meaning to convey 
+            information to as many people as possible.
+            <br><br>
+        <code>import numpy as np</code>
+        <br>
+        <code>print(np.sin(np.pi))</code>
+        </p>
+        <hr>
+
+        <h2>Using subscripts and superscripts - sub and sup</h2>
+        <p>The &ltsub&gt and &ltsup&gt elements are used to create the super 
+            and subscripts, e.g. 
+            <br><br>
+            (x+y)<sup>2</sup> = x<sup>2</sup>+2xy +y<sup>2</sup>, 
+            or H<sub>2</sub>O.
+        </p>
+        <hr>
+
+        <h1>Special tags that need "more"</h1>
+        <h2>button</h2>
+        <p>Here is an example of the button tag. It is a litttle bit misleading since it is a button that 
+            doesn't do anything.
+            You would want to add some interactivity, perhaps
+            with Javascript
+            <button>Open</button>
+            <br>
+            <button>Close</button>
+            <br>
+            <button type="button" onclick="alert('Hello world!')">Click Me!</button>
+            <br>
+            The &ltform&gt is another way to wrrite a button with a link 
+            connection.
+            <form action="https://google.com">
+                <input type="submit" value="Go to Google" />
+            </form>
+        </p>
+        <hr>
+        
+        <h2>meter</h2>
+        <p>The meter tag is cool and can take a lot of attributes. 
+            However, it is better if you have some code that can 
+            make the attribue values dynamic 
+            instead of "hardcoding" them.
+            <br>
+            <label>German:</label>
+        <meter id="german" value="2" min="0" max="10">
+            2 out of 10
+        </meter>
+        <br>
+        <label>English:</label>
+        <meter id="german" value="7" min="0" max="10">
+            7 out of 10
+        </meter>
+        </p>
+        <hr>
+
+        <h2>progress</h2>
+        <p>The progress tag has a very similar layout to
+            the meter tag. The difference is that There
+            is an assumption that there will be a progression
+            to where value will equal 100.
+            <br>
+            <label>Learning HTM:</label>
+        <progress id="learning" value="22" max="100">
+            22%
+        </progresss>
+        </p>
+        <hr>
+
+        <h2>iframe</h2>
+        The iframe is used to nest content.
+        <br>
+        <iframe src="https://www.intro-webdesign.com">
+        </iframe><br />
+        <br>
+        <iframe src="https://www.w3schools.com">
+        </iframe>
+    </body>
+</html>
